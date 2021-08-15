@@ -1,0 +1,37 @@
+user {
+     _id:number,
+     firstName: string,
+     lastName: string,
+     password: number,
+     role: string,
+     reveiw:[{productId:number,productName:string,rating:string,reveiw_id:number}]
+}
+
+reveiw {
+    _id:number,
+    user:{_id:number,firstName:string,lastName:string}
+    product:{name:string,rating:string,createdAt:date}
+    
+}
+
+product {
+    _id:number,
+    name:string,
+    description:string
+    category:string
+    reputatation:number,
+    reveiw:[{_id:number,user_id:number,userName:string,rating:string }],
+}
+
+
+log {
+    _id:number,
+    user: [username,role]
+    url:string,
+    method:string,
+    createdAt:date()
+}
+
+
+
+
