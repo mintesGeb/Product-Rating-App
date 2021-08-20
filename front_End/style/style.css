@@ -1,0 +1,16 @@
+#key-display {
+  background-color: bisque;
+  height: 300px;
+  margin: 20px auto;
+}
+#login-div {
+  position: relative;
+  left: 50%;
+  bottom: 50px;
+}
+
+#logout {
+  position: relative;
+  left: 80%;
+  bottom: 50px;
+}
